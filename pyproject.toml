@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "{{cookiecutter.project_name}}"
+name = "Project template"
 version = "0.1.0"
-description = "{{cookiecutter.description}}"
-authors = ["{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>"]
+description = "Project description"
+authors = ["A. Elgrove"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -21,7 +21,6 @@ flake8-print = "^4.0.0"
 flake8-pyproject = "^1.2.3"
 flake8-pytest-style = "^1.6.0"
 isort = "^5.12.0"
-moto = "^4.0.8"
 pylint = "^2.13.7"
 pytest = "^7.2.0"
 pytest-env = "^0.8.2"
@@ -55,7 +54,7 @@ ignore = ['D100','D104', 'D2', 'D415', 'E501']
 # D2 = whole class (D2**) of docstring formatting issues
 # D415 = docstring first line must end with a full stop
 # E501 = line-too-long
-application-import-names = ['{{cookiecutter.project_name}}', 'tests']
+application-import-names = ['project_template', 'tests']
 docstring-convention = 'google'
 strictness = 'long' # darglint docstring strictness
 max-line-length = 88

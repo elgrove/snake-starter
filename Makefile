@@ -1,7 +1,9 @@
-lint:
+format:
 	-poetry run docformatter -r --in-place --black src tests || [ $$? -eq 3 ] # accept error code 3 as success
 	poetry run black src tests
 	poetry run isort src tests
+
+lint: format
 	poetry run flake8 src tests
 	poetry run pylint src
 
