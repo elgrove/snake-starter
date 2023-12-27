@@ -55,6 +55,7 @@ ignore = ['D100','D104', 'D2', 'D415', 'E501']
 # D415 = docstring first line must end with a full stop
 # E501 = line-too-long
 application-import-names = ['project_template', 'tests']
+per-file-ignores = ['tests/*:S,DAR101,D101']
 docstring-convention = 'google'
 strictness = 'long' # darglint docstring strictness
 max-line-length = 88
